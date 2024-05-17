@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title id="website-title">My Little Website</title>
+    </head>
+    <body>
+        <h1 id="title">My Little Website</h1>
+        <p id="description">
+            This website is something I'm making for FreeCodeCamp.
+            I'm thinking it could be something related to my <i>own</i> website,
+            <a href="https://ianaquino.xyz/" id="pbj">Alexander's Thoughts.</a>
+        <form id="survey-form">
+            <fieldset id="form-one">
+                <label for="name-label" id="name-label"> Name
+                    <input id="name" type="text" placeholder="John Doe" required>
+                </label>
+                <label for="email-label" id="email-label"> Email
+                    <input id="email" type="email" placeholder="johndoe@gmail.com" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+                </label>
+            </fieldset>
+            <fieldset class="form-two">
+                <label for="number-label" id="number-label">How many notes have read in my website?
+                    <input id="number" type="number" pattern="1-9" min="0" max="500" placeholder="0-500">
+                </label>
+                <label for="choices" id="choices"> Are you happy with how my website looks?
+                    <input id="choices">
+                    <select id="dropdown">
+                        <option>Yes</option>
+                        <option>No</option>
+                        <option>Maybe</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset class="form-three">
+                <label>Which do you prefer to go to when you want to know more about my life?
+                    <div>
+                        <input id="radio-label-1" type="radio" value="Social Media" name="buttons" attribute="Social Media">
+                        <label for="radio-label-1">Social Media</label>
+                    </div>
+                    <div>
+                        <input id="radio-label-2" type="radio" value="Website" name="buttons" value="Website">
+                        <label for="radio-label-2">Website</label>
+                    </div>
+                </label>
+            </fieldset>
+            <fieldset>
+            <label id="checkboxes">Which ones have you seen in my website?
+                <input type="checkbox" value="dailies" id="dailies" value="dailies">
+                <label for="dailies">Dailies</label>
+                <input type="checkbox" value="idea-dump" id="idea-dump" value="idea-dump">
+                <label for="idea-dump">Idea Dump</label>
+            </fieldset>
+            <fieldset class="form-four">
+                <label for="comment"> Do you have anything to say to me? Please write them below.
+                    <textarea name="comment" id="comment" placeholder="I think your website's okay, but...">
+                    </textarea>
+                </label>
+            </fieldset>
+            <input type="submit" name="press-me" value="Press me!" id="submit">
+        </form>
+        </p>
+    </body>
+    </head>
+</html>
+
+<!---
+
+User Stories:
+
+    ✅ You should have a page title in an h1 element with an id of title
+    ✅ You should have a short explanation in a p element with an id of description
+    ✅ You should have a form element with an id of survey-form
+    ✅ Inside the form element, you are required to enter your name in an input field that has an id of name and a type of text
+    ✅ Inside the form element, you are required to enter your email in an input field that has an id of email
+    ✅ If you enter an email that is not formatted correctly, you will see an HTML5 validation error
+    ✅ Inside the form, you can enter a number in an input field that has an id of number
+    ✅ The number input should not accept non-numbers, either by preventing you from typing them or by showing an HTML5 validation error (depending on your browser).
+    ✅ If you enter numbers outside the range of the number input, which are defined by the min and max attributes, you will see an HTML5 validation error
+    ✅ For the name, email, and number input fields, you can see corresponding label elements in the form, that describe the purpose of each field with the following ids: id="name-label", id="email-label", and id="number-label"
+    ✅ For the name, email, and number input fields, you can see placeholder text that gives a description or instructions for each field
+    ✅ Inside the form element, you should have a select dropdown element with an id of dropdown and at least two options to choose from
+    ✅ Inside the form element, you can select an option from a group of at least two radio buttons that are grouped using the name attribute
+    ✅ Inside the form element, you can select several fields from a series of checkboxes, each of which must have a value attribute
+    ✅ Inside the form element, you are presented with a textarea for additional comments
+    Inside the form element, you are presented with a button with id of submit to submit all the inputs
+
+Fulfill the user stories and pass all the tests below to complete this project. Give it your own personal style. Happy Coding!
+
+Note: Be sure to add <link rel="stylesheet" href="styles.css"> in your HTML to link your stylesheet and apply your CSS
+
+-->
