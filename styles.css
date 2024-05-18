@@ -1,57 +1,64 @@
-h1 {
-    font-family: Dela Gothic One;
-    text-align: center;
-    color: #042529;
-}
-#description {
-    text-align: center;
-    max-width: 400px;
-    margin: 0 auto;
-    padding-bottom: 5vh;
-}
-#pbj {
-    font-family: Dela Gothic One;
-    color: #042529;
-}
-#pbj:hover {
-    color: #06D6A0;
-}
-#pbj:active {
-    color: #FF8300;
-}
 body {
     background-color: #FFF0CC;
     color: #042529;
     font-family: Erode Variable;
-}
-fieldset {
-    display: block;
-}
-label {
-    font-style: bold;
-}
-#name-label, #email-label, #number-label, #number, #choices {
-    display: block;
-    padding-top: 1vh;
-    padding-bottom: 1vh;
-    margin: 0 auto;
     text-align: center;
 }
-/* 
-I need to explore how to increase the padding of a button without increasing its whole size.
-I'll focus on the other parts of my code first. 
-*/
-#dropdown {
+
+h1, #pbj {
+    font-family: Dela Gothic One;
+    color: #042529;
+}
+
+h1 {
+    text-align: center;
+}
+
+#description, #number, #dropdown, #comment {
     display: block;
     margin: 0 auto;
+}
+
+#description {
+    max-width: 400px;
+    padding-bottom: 5vh;
+}
+
+#pbj:hover {
+    color: #06D6A0;
+}
+
+#pbj:active {
+    color: #FF8300;
+}
+
+fieldset {
+    border: 0;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.label-text {
+    display: block;
+    padding-top: 1vh;
+    padding-bottom: 10px;
+}
+
+#number, #dropdown {
+    width: 30%;
+    margin-top: 2vh;
+}
+
+#comment {
+    width: 43%;
+    min-height: 20vh;
+    margin-top: 2vh;
+}
+
+.inline-label {
+    display: inline-block;
+    margin: 1vh;
 }
 #radio-label-1, #radio-label-2 {
     display: inline-block;
-    margin: 0 auto;
-}
-#comment {
-    display: block;
-    margin: 0 auto;
-    min-width: 100%;
-    max-width: 100%;
 }
